@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+.gitignore
+index.ts
+yarn.lock
+.editorconfig
+tsconfig.json
+*.tgz

@@ -1,0 +1,14 @@
+{
+	"name": "useful-storage",
+	"description": "更好用的Storage",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/iamhefang/useful-storage.git",
+	"author": "hefang <he@hefang.link>",
+	"license": "MIT",
+	"scripts": {
+		"tsc": "tsc",
+		"build": "tsc",
+		"prepublishOnly": "tsc"
+	}
+}

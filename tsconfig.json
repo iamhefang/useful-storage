@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"removeComments": false,
+		"module": "commonjs",
+		"declaration": true,
+		"target": "es5",
+		"lib": [
+			"dom",
+			"es6"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
