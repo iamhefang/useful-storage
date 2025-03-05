@@ -107,3 +107,4 @@ dist
 yarn.lock
 index.js
 index.d.ts
+.vscode

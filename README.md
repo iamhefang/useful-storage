@@ -6,6 +6,9 @@ npm i useful-storage
 
 # use yarn
 yarn add useful-storage
+
+# use pnpm
+pnpm add useful-storage
 ```
 
 ```js

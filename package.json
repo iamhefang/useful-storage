@@ -1,7 +1,7 @@
 {
 	"name": "useful-storage",
 	"description": "更好用的Storage",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"main": "index.js",
 	"repository": "https://github.com/iamhefang/useful-storage.git",
 	"author": "hefang <he@hefang.link>",
@@ -10,6 +10,6 @@
 		"prepublishOnly": "tsc"
 	},
 	"devDependencies": {
-		"typescript": "^3.8.3"
+		"typescript": "^5.8.2"
 	}
 }

@@ -1,4 +1,9 @@
-export function getLocalStorage<T>(name: string, defaultValue: T = null): T {
+export function getLocalStorage<T>(name: string): T | undefined;
+export function getLocalStorage<T>(name: string, defaultValue: T): T;
+export function getLocalStorage<T>(
+	name: string,
+	defaultValue?: T
+): T | undefined {
 	try {
 		const val = localStorage.getItem(name);
 		return val ? JSON.parse(val) : defaultValue;
@@ -7,11 +12,15 @@ export function getLocalStorage<T>(name: string, defaultValue: T = null): T {
 	}
 }
 
-export function setLocalStorage(name: string, value: any) {
-	localStorage.setItem(name, JSON.stringify(value))
+export function setLocalStorage(name: string, value: unknown) {
+	localStorage.setItem(name, JSON.stringify(value));
 }
-
-export function getSessionStorage<T>(name: string, defaultValue: T = null): T {
+export function getSessionStorage<T>(name: string): T | undefined;
+export function getSessionStorage<T>(name: string, defaultValue: T): T;
+export function getSessionStorage<T>(
+	name: string,
+	defaultValue?: T
+): T | undefined {
 	try {
 		const val = sessionStorage.getItem(name);
 		return val ? JSON.parse(val) : defaultValue;
@@ -20,6 +29,6 @@ export function getSessionStorage<T>(name: string, defaultValue: T = null): T {
 	}
 }
 
-export function setSessionStorage(name: string, value: any) {
-	sessionStorage.setItem(name, JSON.stringify(value))
+export function setSessionStorage(name: string, value: unknown) {
+	sessionStorage.setItem(name, JSON.stringify(value));
 }
